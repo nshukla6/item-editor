@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/nshukla6/item-editor",
   "name": "item-editor",
   "version": "0.1.0",
   "private": true,
@@ -7,19 +8,19 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
     "react": "^17.0.1",
-    "react-dev-tools": "0.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
     "react-scripts": "4.0.2",
     "redux": "^4.0.5",
-    "redux-devtools-extension": "^2.13.8",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "ggh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
